@@ -1,0 +1,12 @@
+nav_items:
+  - label: Teras Fox
+    path: /
+  - label: Website dijual
+    path: /products/
+  - label: Artikel Berfaedah
+    path: /news
+  - label: Tentang Kami
+  - label: Kebijakan Media Siber
+  - label: Kontak Kami
+  - label: Peta Situs
+    path: /peta-situs

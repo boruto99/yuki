@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    = partial 'layouts/meta'
+    = stylesheet_link_tag "all"
+<link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c37d8582-f513-449f-89a0-c65a712329fa",
+    });
+  });
+</script>
+  body
+    = partial 'partials/shared/header-primary'
+
+    main.main-content
+
+      = yield
+
+    = javascript_include_tag 'main', async: true
